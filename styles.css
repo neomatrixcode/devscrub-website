@@ -462,6 +462,62 @@ a {
     color: var(--text-primary);
 }
 
+/* ===== Screenshots ===== */
+.screenshots {
+    padding: 80px 0;
+    background: var(--bg-primary);
+    overflow: hidden;
+}
+
+.screenshot-carousel {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    padding: 40px 20px;
+    scroll-snap-type: x mandatory;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Fallback for desktop */
+}
+
+.screenshot-wrapper {
+    flex: 0 0 300px;
+    /* Mobile width */
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-color);
+    transition: transform 0.4s ease;
+}
+
+.screenshot-wrapper:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(99, 102, 241, 0.2);
+    border-color: var(--accent-primary);
+}
+
+.screenshot-img {
+    width: 100%;
+    display: block;
+}
+
+.screenshot-caption {
+    background: var(--bg-card);
+    padding: 12px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+}
+
+@media (min-width: 769px) {
+    .screenshot-wrapper {
+        flex: 0 0 600px;
+        /* Tablet/Desktop width */
+    }
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
     .nav {
