@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevScrub - Limpieza de Disco para Desarrolladores</title>
+    <title>DevScrub - Limpieza de Disco para Desarrolladores y Gamers</title>
     <meta name="description"
-        content="DevScrub es una herramienta de limpieza de disco optimizada para desarrolladores y gamers. Libera espacio eliminando cachés de Docker, npm, Gradle y más.">
-    <meta name="keywords" content="disk cleaner, limpieza disco, desarrolladores, docker, npm, gradle, steam, windows">
-    <meta name="author" content="NeoMatrixCode">
+        content="DevScrub: Limpieza de disco por Josue Acevedo Maldonado (Neomatrix). Optimiza Docker (system prune, compact VHDX) y Juegos (Steam, Epic, limpieza de juegos).">
+    <meta name="keywords"
+        content="disk cleaner, limpieza disco, desarrolladores, limpieza juegos, game cleaner, docker prune, compact vhdx, wsl2 shrink, steam cleaner, epic games, android studio, gradle, josue acevedo maldonado, neomatrix, devscrub">
+    <meta name="author" content="Josue Acevedo Maldonado (Neomatrix)">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="DevScrub - Limpieza de Disco para Desarrolladores">
+    <meta property="og:title" content="DevScrub - Limpieza para Desarrolladores y Gamers">
     <meta property="og:description"
-        content="Libera espacio eliminando cachés de Docker, npm, Gradle y gestiona tus juegos.">
+        content="La herramienta definitiva para limpiar Docker, Cachés de código y Juegos (Steam/Epic). Creado por Neomatrix.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://devscrub-website.vercel.app/">
     <meta property="og:image" content="https://devscrub-website.vercel.app/limpieza-compacto.png">
@@ -22,7 +23,7 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="DevScrub - Limpieza de Disco para Desarrolladores">
+    <meta name="twitter:title" content="DevScrub - Limpieza de Disco para Desarrolladores y Gamers">
     <meta name="twitter:description"
         content="Libera espacio eliminando cachés de Docker, npm, Gradle. Desinstalador limpio incluido.">
     <meta name="twitter:image" content="https://devscrub-website.vercel.app/limpieza-compacto.png">
@@ -42,6 +43,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org for Google & AI Context -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "DevScrub",
+      "operatingSystem": "Windows 10, Windows 11",
+      "applicationCategory": "UtilitiesApplication",
+      "genre": "Disk Cleaner, Game Cleaner, Developer Tool",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Josue Acevedo Maldonado (Neomatrix)",
+        "url": "https://github.com/neomatrixcode"
+      },
+      "description": "Herramienta de limpieza para desarrolladores y gamers. Optimiza Docker, Juegos (Steam/Epic), VHDX y cachés de código.",
+      "featureList": "Docker System Prune, WSL2 Disk Shrink, Game Cleaner (Steam/Epic/EA), Android AVD Cleaner, Gradle Cache Cleaner",
+      "softwareVersion": "1.0.0"
+    }
+    </script>
 </head>
 
 <body>
@@ -98,14 +124,16 @@
 
                 <div class="feature-card">
                     <div class="feature-icon">🐳</div>
-                    <h3>Docker</h3>
-                    <p>Elimina imágenes, volúmenes y contenedores sin usar. Recupera gigabytes de espacio.</p>
+                    <h3>Docker & WSL2</h3>
+                    <p>Ejecuta <strong>system prune</strong> y <strong>compacta discos VHDX</strong> de WSL2. Recupera
+                        gigabytes reales.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">📦</div>
                     <h3>Cachés de Desarrollo</h3>
-                    <p>npm, Gradle, Maven, pip, Bun, Cargo y más. Limpia todos tus proyectos.</p>
+                    <p>Elimina cachés de <strong>Gradle, Android AVD, Bun, Maven, pip</strong> y más. Limpia todos tus
+                        proyectos.</p>
                 </div>
 
                 <div class="feature-card">
@@ -215,7 +243,8 @@
                     <span class="logo-icon">🧹</span>
                     <span class="logo-text">DevScrub</span>
                 </div>
-                <p>Hecho con ❤️ por <a href="https://ko-fi.com/neomatrixcode" target="_blank">Neomatrix</a></p>
+                <p>Hecho con ❤️ por <a href="https://ko-fi.com/neomatrixcode" target="_blank">Josue Acevedo Maldonado
+                        (Neomatrix)</a></p>
             </div>
             <div class="footer-links">
                 <a href="https://github.com/neomatrixcode/devscrub-releases" target="_blank">GitHub</a>
