@@ -15,7 +15,9 @@
 }
 
 /* ===== Reset & Base ===== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -352,6 +354,14 @@ a {
     border-bottom: none;
 }
 
+.coming-soon {
+    margin-top: 16px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
 /* ===== Footer ===== */
 .footer {
     padding: 40px 0;
@@ -399,38 +409,38 @@ a {
     .nav {
         padding: 16px 20px;
     }
-    
+
     .nav-links {
         display: none;
     }
-    
+
     .hero h1 {
         font-size: 2rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1rem;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
         width: 100%;
         padding: 0 20px;
     }
-    
+
     .btn {
         width: 100%;
         justify-content: center;
     }
-    
+
     .features-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .pricing-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .footer .container {
         flex-direction: column;
         text-align: center;
