@@ -362,6 +362,64 @@ a {
     opacity: 0.8;
 }
 
+/* ===== Tooltips ===== */
+.tooltip-container {
+    position: relative;
+    cursor: help;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tooltip-icon {
+    font-size: 0.9em;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-icon {
+    opacity: 1;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 240px;
+    background-color: #2a2a35;
+    color: var(--text-primary);
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px;
+    position: absolute;
+    z-index: 10;
+    bottom: 125%;
+    /* Position above */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.85rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-color);
+    line-height: 1.4;
+    pointer-events: none;
+}
+
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #2a2a35 transparent transparent transparent;
+}
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
 /* ===== Footer ===== */
 .footer {
     padding: 40px 0;
