@@ -41,3 +41,32 @@ document.querySelectorAll('a[href*="DevScrub_Free_Setup.exe"]').forEach(link => 
         // Add your analytics here if needed
     });
 });
+
+// ===== Lightbox for Screenshots =====
+function openLightbox(imgSrc) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = imgSrc;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent scroll
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.remove('active');
+    document.body.style.overflow = ''; // Restore scroll
+}
+
+// Add click listeners to all screenshot images
+document.querySelectorAll('.screenshot-img').forEach(img => {
+    img.addEventListener('click', () => {
+        openLightbox(img.src);
+    });
+});
+
+// Close on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeLightbox();
+    }
+});
