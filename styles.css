@@ -259,6 +259,12 @@ a {
     box-shadow: 0 8px 30px rgba(99, 102, 241, 0.15);
 }
 
+.feature-highlight {
+    border-color: var(--accent-primary);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%);
+    box-shadow: 0 0 20px var(--glow-color);
+}
+
 .feature-icon {
     font-size: 2.5rem;
     margin-bottom: 16px;
